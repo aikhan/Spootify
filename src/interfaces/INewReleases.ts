@@ -1,6 +1,6 @@
-import IAlbum from "./IAlbum";
+import IAlbum from './IAlbum'
 
 export default interface INewReleases {
-  newReleases: IAlbum[];
-  error: Error | null;
+    newReleases: IAlbum[]
+    error: Error | null
 }

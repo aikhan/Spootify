@@ -1,36 +1,36 @@
 import {
-  PLAYLISTS_FEATURED_FETCH,
-  PLAYLISTS_FEATURED_FETCH_FAILURE,
-  PLAYLISTS_FEATURED_FETCH_SUCCESS,
-  IPlaylistsFeaturedFetchAction,
-  IPlaylistsFeaturedFetchFailureAction,
-  IPlaylistsFeaturedFetchSuccessAction,
-} from "../interfaces/ActionInterfaces/PlaylistsActions";
+    PLAYLISTS_FEATURED_FETCH,
+    PLAYLISTS_FEATURED_FETCH_FAILURE,
+    PLAYLISTS_FEATURED_FETCH_SUCCESS,
+    IPlaylistsFeaturedFetchAction,
+    IPlaylistsFeaturedFetchFailureAction,
+    IPlaylistsFeaturedFetchSuccessAction,
+} from '../interfaces/ActionInterfaces/PlaylistsActions'
 
 const playlistsFeaturedFetch = (): IPlaylistsFeaturedFetchAction => ({
-  type: PLAYLISTS_FEATURED_FETCH,
-});
+    type: PLAYLISTS_FEATURED_FETCH,
+})
 
 const playlistsFeaturedFetchSuccess = (
-  playlists
+    playlists
 ): IPlaylistsFeaturedFetchSuccessAction => ({
-  type: PLAYLISTS_FEATURED_FETCH_SUCCESS,
-  payload: {
-    playlists: playlists,
-  },
-});
+    type: PLAYLISTS_FEATURED_FETCH_SUCCESS,
+    payload: {
+        playlists: playlists,
+    },
+})
 
 const playlistsFeaturedFetchFailure = (
-  error
+    error
 ): IPlaylistsFeaturedFetchFailureAction => ({
-  type: PLAYLISTS_FEATURED_FETCH_FAILURE,
-  payload: {
-    error: error,
-  },
-});
+    type: PLAYLISTS_FEATURED_FETCH_FAILURE,
+    payload: {
+        error: error,
+    },
+})
 
 export {
-  playlistsFeaturedFetch,
-  playlistsFeaturedFetchSuccess,
-  playlistsFeaturedFetchFailure,
-};
+    playlistsFeaturedFetch,
+    playlistsFeaturedFetchSuccess,
+    playlistsFeaturedFetchFailure,
+}

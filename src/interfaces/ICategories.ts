@@ -1,6 +1,6 @@
-import ICategory from "./ICategory";
+import ICategory from './ICategory'
 
 export default interface ICategories {
-  categories: ICategory[];
-  error: Error | null;
+    categories: ICategory[]
+    error: Error | null
 }
