@@ -54,17 +54,17 @@ interface DiscoverProps extends PropsFromRedux {
     categories: any
 }
 
-const mapStateToPsrops = ({
+const mapStateToProps = ({
     newReleases,
     playlists,
     categories,
     auth,
-}: any) => ({
+  }: any) => ({
     newReleases,
     playlists,
     categories,
     auth,
-})
+  });
 
 const mapDispatchToProps = (dispatch: any) => ({
     authTokenFetch: () => dispatch(authTokenFetch()),
@@ -73,6 +73,7 @@ const mapDispatchToProps = (dispatch: any) => ({
     categoriesFetch: () => dispatch(categoriesFetch()),
 })
 
-const connector = connect(mapStateToProps, mapDispatchToProps)
-type PropsFromRedux = ConnectedProps<typeof connector>
-export default connector(Discover)
+const connector = connect(mapStateToProps, mapDispatchToProps);
+type PropsFromRedux = ConnectedProps<typeof connector>;
+export default connector(Discover);
+
