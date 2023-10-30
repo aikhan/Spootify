@@ -49,12 +49,12 @@ const Discover = ({
 }
 
 interface DiscoverProps extends PropsFromRedux {
-    newReleases: any
-    playlists: any
+    newReleases: any,
+    playlists: any,
     categories: any
 }
 
-const mapStateToProps = ({
+const mapStateToPsrops = ({
     newReleases,
     playlists,
     categories,

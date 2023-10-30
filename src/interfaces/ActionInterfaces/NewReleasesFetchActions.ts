@@ -10,12 +10,12 @@ export interface INewReleasesFetchAction extends BaseAction {
 }
 
 export interface INewReleasesFetchSuccessAction extends BaseAction {
-    type: typeof NEW_RELEASES_FETCH_SUCCESS
+    type: typeof NEW_RELEASES_FETCH_SUCCESS,
     payload: { newReleases: IAlbum[] }
 }
 
 export interface INewReleasesFetchFailureAction extends BaseAction {
-    type: typeof NEW_RELEASES_FETCH_FAILURE
+    type: typeof NEW_RELEASES_FETCH_FAILURE,
     payload: { error: Error }
 }
 

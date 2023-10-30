@@ -10,12 +10,12 @@ export interface IAuthTokenFetchAction extends BaseAction {
 }
 
 export interface IAuthTokenFetchSuccessAction extends BaseAction {
-    type: typeof AUTH_TOKEN_FETCH_SUCCESS
+    type: typeof AUTH_TOKEN_FETCH_SUCCESS,
     payload: { token: string }
 }
 
 export interface IAuthTokenFetchFailureAction extends BaseAction {
-    type: typeof AUTH_TOKEN_FETCH_FAILURE
+    type: typeof AUTH_TOKEN_FETCH_FAILURE,
     payload: { error: Error }
 }
 

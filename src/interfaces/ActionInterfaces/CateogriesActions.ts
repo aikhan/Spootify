@@ -10,12 +10,12 @@ export interface ICategoriesFetchAction extends BaseAction {
 }
 
 export interface ICategoriesFetchSuccessAction extends BaseAction {
-    type: typeof CATEGORIES_FETCH_SUCCESS
+    type: typeof CATEGORIES_FETCH_SUCCESS,
     payload: { categories: ICategory[] }
 }
 
 export interface ICategoriesFetchFailureAction extends BaseAction {
-    type: typeof CATEGORIES_FETCH_FAILURE
+    type: typeof CATEGORIES_FETCH_FAILURE,
     payload: { error: Error }
 }
 
