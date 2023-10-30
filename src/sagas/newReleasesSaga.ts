@@ -8,7 +8,6 @@ export const getAuth = (state) => state.auth;
 
 export function* handleNewReleasesFetch() {
   try {
-    console.log("handleNewReleasesFetch");
 
     const auth = yield select(getAuth);
 

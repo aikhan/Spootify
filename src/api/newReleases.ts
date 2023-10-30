@@ -3,7 +3,6 @@ import IAlbum from "../interfaces/IAlbum";
 
 const newReleasesFetchApi = async (accessToken) => {
   try {
-    console.log("newReleasesFetchApi");
 
     const url = `${BASE_URL}/browse/new-releases`;
 

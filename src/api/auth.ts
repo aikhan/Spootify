@@ -21,7 +21,7 @@ const authTokenFetchApi = async () => {
       throw json;
     }
   } catch (error) {
-    console.log("authTokenFetchApi - error -> ", error);
+      console.log("authTokenFetchApi - error -> ", error);
     throw error;
   }
 };

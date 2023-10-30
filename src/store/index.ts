@@ -19,7 +19,6 @@ const configureStore = () => {
 };
 
 const analyticsMiddleWare = () => (next: (arg0: any) => any) => (action: any) => {
-  //console.log('dispatching', action.type);
   const result = next(action);
   return result;
 };

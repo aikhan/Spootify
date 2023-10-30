@@ -3,8 +3,6 @@ import IPlaylist from "../interfaces/IPlaylist";
 
 const playlistsFeaturedFetchApi = async (accessToken) => {
   try {
-    console.log("playlistsFeaturedFetchApi --> ", BASE_URL);
-
     const url = `${BASE_URL}/browse/featured-playlists`;
 
     const response = await fetch(url, {
